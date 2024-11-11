@@ -18,5 +18,6 @@ verify:
 certs:
 	@cd scripts/certs;\
 	 sh root.sh $(EXPIRY);\
+	 sh server-csr.sh;\
 	 sh server.sh
 	@echo "Certs created successfully"
